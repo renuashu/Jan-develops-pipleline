@@ -18,5 +18,9 @@ pipeline
     { steps
      {sh 'echo code is build'}
     }
+      stage ('deploy')
+    { steps
+     {sh 'echo code is deploy'}
+    }
   }
 }
