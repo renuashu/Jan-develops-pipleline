@@ -18,6 +18,10 @@ pipeline
     { steps
      {sh 'echo code is build'}
     }
+    
+     stage ('get approval')
+    { input "please approve the deployment?"}
+    
       stage ('deploy')
     { steps
      {sh 'echo code is deploy'}
